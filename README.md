@@ -32,148 +32,123 @@ Publish the website in the LocalHost.
 
 ## PROGRAM:
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Cover</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-        }
+<html>
+     <head>
+           <meta name="viewport"
+           content="width=device-width, initial-scale=1.0">
+           <style>
+      
+           .bookpage{
+               width: 400px;
+               height: 600px;
+               color: white;
+               margin-left: auto;
+               margin-right: auto;
+               padding: 20px;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow',Arial, sans-serif;
+               background-image: url(bgg.jpg);
+               background-size: cover;
+           }
 
-        .background-container {
-            width: 210mm;
-            height: 297mm;
-            background-color: #fff;
-            background-image: url('background.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            padding: 20px;
-            border: 2px solid #decece;
-        }
 
-        .text-container {
-            position: absolute;
-            top: 5%; 
-            left: 5%;
-            color: #f1eded;
-            z-index: 10;
-            font-size: 18px;
-            line-height: 1.4;
-            width: 60%; 
-        }
+           .insight{
+                color: white;
 
-        .expert-insight {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ffffff;
-            font-family: 'Georgia', serif;
-            margin-bottom: 10px;
-        }
+           }
 
-        .book-title {
-            font-size: 30px;
-            font-weight: bold;
-            line-height: 1.3;
-        }
 
-        .subtitle {
-            font-size: 20px;
-            font-style: italic;
-            font-weight: 300;
-            color: #6a6a6a;
-            margin-top: 10px;
-        }
+           .hrstyle{
+                width: 100px
+           }
+           .author{
 
-        .author-name {
-            font-size: 22px;
-            font-weight: 300;
-        }
+               display: inline;
+               position: relative;
+               color: white;
+               top: 190px;
 
-        .line {
-            width: 50%; 
-            border-top: 3px solid #f1ebeb; 
-            margin-top: 10px;
-        }
+               font-family:Georgia;
+               font-size: medium;
+            }
+            .booktitle{
+                font-family: 'Courier New', Courier,monospace;
+                font-size: larger;
+                text-align: center;
+                position: relative;
+                top: 30px;
 
-        .image-container {
-            position: absolute;
-            bottom: 12%;
-            right: 5%;
-        }
+            }
+            .id {
+                width:400px;
+                position: relative;
+                top:180px;
 
-        .image-container img {
-            width: 130px;
-            height: 130px;
-            border-radius: 5px;
-            object-fit: cover;
-        }
+            }
+            .pub{
+                font-size: medium;
+                position: relative;
+                top:155px;
+                left:330px;
+            }
+            .ed{
+                color: white;
+                font-size: medium;
+                font-family: Verdana;
+                position:relative;
+                top:85px;
+            
+            }
+            .subtitle{
+                font-family: Tahoma;
+                font-size: large;
+                position: relative;
+                top:40px;
+            }
+            .mypic{
+                 position: relative;
+                 top: 135px;
+                 left: 260px;
+                 width: 100px;
+                 height: 100px;
+                 background-size: cover;
+            }
+            </style>
+            <title>Book Cover Page</title>
+         </head>
+         <body>
+            <div class="bookpage">
+                 <div class="insight">
+                      SEC INSIGHT
+                 </div>
+                 <div class="hrstyle">
+                      <hr style="color: yellow;">
+                 </div>
+                 <div class="booktitle">
+                      <h1>Introduction to Artificial Intelligence</h1></div>
 
-    </style>
-</head>
-<body>
+                 <div class="subtitle">
+                      This is How Robots will Change the World
+                 </div>
+                 <div class="mypic">
+                      <img src="mypic.jpg" width="130" height="145" alt="">
+                 </div>
+                 <div class="id">
+                      <hr style="color: rgb(5, 5, 69);">
+                 </div>
+                 <div class="author">
+                       <p><b>Jawahar.S</b></p>
+                 </div>
+                 <div class="pub">
+                       SEC
+                 </div>
+                 <div class="ed">
+                      <b>Third Edition</b>
+                 </div>
+             </div>
+          </body>
+       </html>
+             
 
-<div class="background-container">
-    <div class="text-container">
-        <div class="expert-insight">
-            Expert Insight
-        </div>
-        <div class="line"></div> 
-        <div class="book-title">
-            The Pragmatic Programmer<br>Your Journey Towards Mastery
-        </div>
-        <div class="subtitle">
-            Unlocking the Secrets of Crafting Code that Lasts
-        </div>
-        <div class="author-name">Andrew Hunt</div>
-        <h3>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        .<br>
-        JAWAHAR BABU</h3>
-    </div>
-
-    <div class="image-container">
-        <img src="WhatsApp Image 2024-12-06 at 09.24.22_5f35a365.jpg" alt="Your Image">
-    </div>
-</div>
-
-</body>
-</html>
 
 ```
 
